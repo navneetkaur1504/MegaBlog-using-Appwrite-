@@ -4,7 +4,7 @@ import {login as authLogin} from '../store/authSlice'
 import {Button, Input, Logo} from "./index"
 import { useDispatch } from 'react-redux'
 import authService from "../appwrite/auth"
-import {set, useForm} from "react-hook-form"
+import {useForm} from "react-hook-form"
 
 function Login() {
     const navigate = useNavigate()
@@ -20,7 +20,7 @@ function Login() {
                 const userData = await authService.getCurrentUser()
                 if(userData) dispatch(authLogin(userData));
                 navigate("/")
-            }
+            } 
         }catch(error){
             setError(error.message)
         }
@@ -69,18 +69,16 @@ function Login() {
                 {...register("password", {
                     required: true,
                 })}
-                 />
+                />
 
                 <Button
-                type="Submit"
+                type="submit"
                 className="w-full"
                 >Sign in</Button>
 
-
-
             </div>
 
-        </form>
+            </form>
         </div>
     </div>
   )
