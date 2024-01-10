@@ -18,6 +18,7 @@ export {
     RTE,
     Signup,
     Login,
+    Post,
     PostForm,
     PostCard
 }
