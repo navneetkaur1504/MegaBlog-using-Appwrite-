@@ -2,23 +2,24 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Container from "./container/Container";
 import Logo from "./Logo";
-import LogoutbBtn from "./Header/LogoutbBtn";
+import LogoutBtn from "./Header/LogoutbBtn";
 import RTE from "./RTE";
 import Signup from "./Signup";
 import Login from "./Login";
-import Post from "./Post";
-import PostForm from "./post-form/PostForm"
+import PostForm from "./post-form/PostForm";
 import PostCard from "./PostCard";
+import AuthLayout from './AuthLayout';
+
 export {
     Header,
     Footer,
     Container,
     Logo,
-    LogoutbBtn,
+    LogoutBtn,
     RTE,
     Signup,
     Login,
-    Post,
     PostForm,
-    PostCard
+    PostCard,
+    AuthLayout
 }
